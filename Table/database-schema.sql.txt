@@ -1,8 +1,0 @@
-CREATE TABLE posts(     id MEDIUMINT NOT NULL AUTO_INCREMENT,    name CHAR(25) NOT NULL,    PRIMARY KEY (id)  );
-
-
-
-Screenshots of mySql.
-
-//the database has one table called post following Bret’s instructions.
-
