@@ -1,7 +1,0 @@
-//all hail j presper eckert 
-
-
-
-
-
-CREATE TABLE posts(     id MEDIUMINT NOT NULL AUTO_INCREMENT,    name CHAR(25) NOT NULL,    PRIMARY KEY (id)  );

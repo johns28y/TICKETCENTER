@@ -1,0 +1,33 @@
+//all hail j presper eckert and philly farnsworth
+
+
+
+
+
+CREATE TABLE posts(
+   grp ENUM(‘posts_title’,’posts_body’, ‘submission_date’) NOT NULL,
+   id MEDIUMINT NOT NULL AUTO_INCREMENT,
+   name CHAR(100) NOT NULL,
+   PRIMARY KEY(grp, id)
+) ENGINE=MyISAM;
+
+
+id MEDIUMINT NOT NULL AUTO_INCREMENT,     id MEDIUMINT NOT NULL AUTO_INCREMENT,    name CHAR(25) NOT NULL,    PRIMARY KEY (id) 
+
+ );
+
+
+// need to add the three fields
+
+posts_title
+posts_body
+submission_date
+
+// do the three fields above
+
+// delete the table that currently exist in the terminal
+
+
+// push the working table that has the three fields included
+
+// test this table inside of the terminal. Make sure it can run. 

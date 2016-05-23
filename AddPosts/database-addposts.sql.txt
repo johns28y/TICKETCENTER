@@ -11,7 +11,7 @@ INSERT INTO posts
 >("NBA Tickets for sale", "Price is for (2) NBA Finals tickets to see the Miami Heat in their first home game versus the Spurs on 6/6.. These are guaranteed Seats in section 307, row 11. Tickets can be emailed or picked up in the Brickell/Downtown MIami area", NOW());
 
 post 3:
-Insert INTO posts
+INSERT INTO posts
 >(posts_title,posts_body,submission_date)
 >Values
 >("Authentic NHL Full Ticket Stub", "This is a real ticket, not a reproduction. The ticket is in good condition with 3 slight bends, 2003 NHL Ottawa Senators defeated the Detroit Red Wings 3-1", NOW());
