@@ -16,3 +16,8 @@ INSERT INTO posts
 >Values
 >("Authentic NHL Full Ticket Stub", "This is a real ticket, not a reproduction. The ticket is in good condition with 3 slight bends, 2003 NHL Ottawa Senators defeated the Detroit Red Wings 3-1", NOW());
 
+post 4: 
+INSERT INTO POSTS 
+>(posts_title,posts_body,submission_date)
+>Values 
+>("All-Star Week Ticket Strip", "Each ticket strip includes one ticket for MLB All-Star Sunday, featuring the SIRIUSXM All-Star Futures Game", NOW());
