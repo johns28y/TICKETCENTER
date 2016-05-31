@@ -17,7 +17,7 @@ b) website mockup designs. Written in HTML. Code available inside.
 c) iOS app. Code will be available later.
 
 Motivation:
-Georgia Tech will hit me hard if I do not develop the abilities to complete projects. A special friend and mentor wanted to help me strenghten my engineering abilities. So, he developed this project for me.
+Georgia Tech will hit me hard and I want to succeed. Therefore, A special friend and mentor wanted to help me strenghten my engineering abilities. So, he developed this project for me.
 
 Contributors:
 tjk3@gatech.edu
