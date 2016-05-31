@@ -1,0 +1,27 @@
+Database report:
+
+
+Background:
+In the project specification I was required to create a database using mySQL commands. I understand the basics of MySQl and acquired knowledge on the database schema. My mentor proposed a few questions for me to answer at the end of Phase 2.  I'd like a chance to answer each of them
+
+Question 1: 
+We have the names of the fields we can store in addition to the types of those fields. 
+
+What are the data types for title, body and date for every post?
+
+Answer 1 :
+The title, body and date was created in the create table post command.
+
+Title will be a string variable data type. The reason is because for title we want to hold
+multiple characters. 
+
+Body will be a string variable data time. Same reason as title because for body we want to
+hold multiple characters. 
+
+Submission date will be a timestamp datatype. The reason is because of the specificity of timestamp. We want our values to contain both date and time parts. 
+
+Question 2: 
+
+
+
+
