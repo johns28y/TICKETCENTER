@@ -2,7 +2,7 @@
 bulletinboard enables users to post messages, see a list of all of the messages that were previously posted, and read individual messages. 
 
 Synopsis:
-This repository for is storage for a half-summer project that was assigned by a friend and mentor.
+This repository is storage for a half-summer project that was assigned by a special friend and mentor.
 
 Code:
 
@@ -17,8 +17,7 @@ b) website mockup designs. Written in HTML. Code available inside.
 c) iOS app. Code will be available later.
 
 Motivation:
-Georgia Tech will hit me hard if I do not develop the abilities to complete projects. A special friend and mentor wanted to help me 
-strenghten my engineering abilities. So, he developed this project for me.
+Georgia Tech will hit me hard if I do not develop the abilities to complete projects. A special friend and mentor wanted to help me strenghten my engineering abilities. So, he developed this project for me.
 
 Contributors:
 tjk3@gatech.edu
