@@ -16,7 +16,7 @@
 		95A754071CFF8F1B00875C7B /* BulletinBoardMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A754061CFF8F1B00875C7B /* BulletinBoardMobileUITests.swift */; };
 		95A754121CFF97B600875C7B /* PostTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A754111CFF97B600875C7B /* PostTableCell.swift */; };
 		95A754141CFF9A1300875C7B /* BulletinPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A754131CFF9A1300875C7B /* BulletinPost.swift */; };
-		95A754161CFF9DAB00875C7B /* RestAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A754151CFF9DAB00875C7B /* RestAPIManager.swift */; };
+		95DA1B461D00F54C00968A53 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DA1B451D00F54C00968A53 /* JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 		95A754081CFF8F1B00875C7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95A754111CFF97B600875C7B /* PostTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableCell.swift; sourceTree = "<group>"; };
 		95A754131CFF9A1300875C7B /* BulletinPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BulletinPost.swift; sourceTree = "<group>"; };
-		95A754151CFF9DAB00875C7B /* RestAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPIManager.swift; sourceTree = "<group>"; };
+		95DA1B451D00F54C00968A53 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 				95A753FA1CFF8F1B00875C7B /* LaunchScreen.storyboard */,
 				95A753FD1CFF8F1B00875C7B /* Info.plist */,
 				95A753F51CFF8F1B00875C7B /* BulletinBoardMobile.xcdatamodeld */,
-				95A754151CFF9DAB00875C7B /* RestAPIManager.swift */,
+				95DA1B451D00F54C00968A53 /* JSON.swift */,
 			);
 			path = BulletinBoardMobile;
 			sourceTree = "<group>";
@@ -212,8 +212,8 @@
 				95A754141CFF9A1300875C7B /* BulletinPost.swift in Sources */,
 				95A754121CFF97B600875C7B /* PostTableCell.swift in Sources */,
 				95A753F71CFF8F1B00875C7B /* BulletinBoardMobile.xcdatamodeld in Sources */,
+				95DA1B461D00F54C00968A53 /* JSON.swift in Sources */,
 				95A753F11CFF8F1B00875C7B /* ViewController.swift in Sources */,
-				95A754161CFF9DAB00875C7B /* RestAPIManager.swift in Sources */,
 				95A753EF1CFF8F1B00875C7B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +402,7 @@
 				95A7540D1CFF8F1B00875C7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95A7540E1CFF8F1B00875C7B /* Build configuration list for PBXNativeTarget "BulletinBoardMobileUITests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +411,7 @@
 				95A754101CFF8F1B00875C7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
