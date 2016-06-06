@@ -2,16 +2,25 @@
 <html>
     <center>
     <head>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+        $(document).ready(function () { // connect to html and setup function call
+            $("#htmlForm").submit(function (e) {  // connect to html tag using id, using #
+                var url = "/Users/tyreking/bulletinboard/website/fetch.php"; // the script where you handle the form input.
+                $.ajax({type: "POST", url: url, data: $(this).serialize(), // serializes the form's elements.
+                    success: function (data) {
+                        alert("Connected"); // show response from the php script.
+                    }});
+                e.preventDefault(); // avoid to execute the actual submit of the form
+            });
+        });
+        </script>
 	<h1> Add New Post </h1>
 	</head> <body>
         
         <br><br><a href = "index.html"> Return to Index</a><br><br>
-        <php?>
-            $connection = mysql_connect("localhost","root","")
-            $db = mysql_select_db("")
-        </php?>
         
-    <form> 
+    <form name="htmlForm" id="htmlForm" method="POST" action="/Users/tyreking/bulletinboard/website/fetch.php"> 
     Title: <br> 
     <input type="text" name="title"><br>
     <br>
