@@ -1,10 +1,8 @@
-SELECT (title, body, date)
+SELECT `title`, `body`, `date`
 
-FROM posts;
+FROM `posts`
 
-SELECT * FROM posts;
-
-ORDER BY submission_date DESC;
+ORDER BY `date` DESC;
 
 /*
 select * FROM posts
