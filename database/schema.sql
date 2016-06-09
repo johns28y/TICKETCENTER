@@ -6,8 +6,5 @@ CREATE TABLE posts(
   `date` DATETIME NOT NULL 
 ) ENGINE = InnoDB
 
-/*
-should the id MEDIUMINT be next to title?
-*/
 
 
