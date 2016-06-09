@@ -1,10 +1,10 @@
 INSERT INTO posts
 (`title`, `body`, `date`) VALUES
-("Concert Tickets for sale", "3 Taylor Swift 1989 Floor Tickets (Hard Tickets) for MetLife Stadium concert on 07/11/2015. Great Floor Seats", NOW());
+("Concert Tickets for sale", "3 Taylor Swift 1989 Floor Tickets (Hard Tickets) for MetLife Stadium concert on 07/11. Great Floor Seats", NOW());
 
 INSERT INTO posts
 (`title`, `body`, `date`) VALUES
-("NBA Tickets for sale", "Price is for (2) NBA Finals tickets to see the Miami Heat in their first home game versus the Spurs on 6/6.. These are guaranteed Seats in section 307, row 11. Tickets can be emailed or picked up in the Brickell/Downtown MIami area", NOW());
+("NBA Tickets for sale", "Price is for (2) NBA Finals tickets to see the Miami Heat in their first home game versus the Spurs on 6/20.. These are guaranteed Seats in section 307, row 11. Tickets can be emailed or picked up in the Brickell/Downtown MIami area", NOW());
 
 INSERT INTO posts
 (`title`, `body`, `date`) VALUES
