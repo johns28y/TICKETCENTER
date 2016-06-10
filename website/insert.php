@@ -10,4 +10,3 @@ if(isset $_POST['submit']) {
     }
 mysql_close($connection);
 
-//connect the php code to the html 
