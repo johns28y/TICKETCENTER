@@ -4,9 +4,9 @@ if (!$connection) {
 }
 if(isset $_POST['submit']) {
     $title = $_POST['title'];
-    $message = $_POST['message'];
+    $body = $_POST['body'];
     $timestamp = date("Y-m-d h:i:sa");
-    $query = mysql_query("insert into post(posts_title,posts_body,submission_date) values ($title, $message, $timestamp)");
+    $query = mysql_query("insert into post(title,body,date) values ($title, $body, $timestamp)");
     }
 mysql_close($connection);
 
