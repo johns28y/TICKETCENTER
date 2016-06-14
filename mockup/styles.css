@@ -1,24 +1,19 @@
-table, td {
-    height: 200px;
-    border: 0px;	
+
+div.display-ticket {
+    font-family: Helvetica;
+    font-size: 12 pt; 
+    border: 3px solid black;
+    padding:10px;
 }
-div.a {
-	display:table;
+
+div.center {
+    max-width: 800px; 
+    font:Helvetica;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
-div.b{
-	display:table;
+
+body {
+    background-color: #ADD8E6;
 }
-/*
-
-Read this and use this API for your MySQL access in PHP: https://phpdelusions.net/pdo
-This is the "modern" API and the correct way to access MySQL from PHP
-
-Clean it up to use the <div> tag and class="..." 
-exclusively, then do styles
-
-Yah, why don't you finish updating the HTML and CSS as we discussed (don't use <table>, use class="..." 
-in your HTML and use that to style the rows)
-
-http://wiki.hashphp.org/PDO_Tuto...
-*/
-
