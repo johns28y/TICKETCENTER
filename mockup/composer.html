@@ -1,37 +1,30 @@
 <!DOCTYPE html> 
-<html>
-    <body bgcolor = "#ADD8E6">
-    <center>
-    <head>
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script>
-        $(document).ready(function () { // connect to html and setup function call
-            $("#htmlForm").submit(function (e) {  // connect to html tag using id, using #
-                var url = "/Users/tyreking/bulletinboard/website/fetch.php"; // the script where you handle the form input.
-                $.ajax({type: "POST", url: url, data: $(this).serialize(), // serializes the form's elements.
-                    success: function (data) {
-                        alert("Connected"); // show response from the php script.
-                    }});
-                e.pre66b ventDefault(); // avoid to execute the actual submit of the form
-            });
-        });
-        </script>
-	<h1> Add New Post </h1>
-	</head> <body>
-        
-            <a href = "index.html"> Visit Home</a>
-        
-    <form name="htmlForm" id="htmlForm" method="POST" action="/Users/tyreking/bulletinboard/website/fetch.php"> 
-    Title: <br> 
-    <input type="text" name="title"><br>
-    <br>
-    Description:
-    <br> 
-    <textarea rows="30" cols="50">
-    </textarea>
-    <br> <br>
-    <input type="submit" value="submit">
-    </form>
-    </center>  
+<html> <!-- use this to start the filec-->
+    <head><!-- this is the first thing that needs to happen in an html file -->
+        <title> <!-- only the title should go inside of the head-->
+            Ticket Center
+        </title>
+    </head> <!-- close out the head-->
+    <body bgcolor = "#ADD8E6"> <!--obsolete bg color needs to put in CSS-->
+        <center>
+            <h1> 
+                Add New Post 
+            </h1>
+            <a href = "index.html"> 
+                Visit Home
+            </a> 
+            <form name="htmlForm" id="htmlForm" method="POST" action="/Users/tyreking/bulletinboard/website/fetch.php"> 
+                Title: <br> 
+                <input type="text" name="title">
+                <br>
+                <br>
+                Text:
+                <br> 
+                <textarea rows="30" cols="50"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="submit">
+            </form>
+        </center>  
     </body> 
 </html>
