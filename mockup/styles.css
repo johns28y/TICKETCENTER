@@ -1,5 +1,24 @@
 table, td {
     height: 200px;
-    border: 0px;
+    border: 0px;	
 }
+div.a {
+	display:table;
+}
+div.b{
+	display:table;
+}
+/*
+
+Read this and use this API for your MySQL access in PHP: https://phpdelusions.net/pdo
+This is the "modern" API and the correct way to access MySQL from PHP
+
+Clean it up to use the <div> tag and class="..." 
+exclusively, then do styles
+
+Yah, why don't you finish updating the HTML and CSS as we discussed (don't use <table>, use class="..." 
+in your HTML and use that to style the rows)
+
+http://wiki.hashphp.org/PDO_Tuto...
+*/
 
