@@ -4,7 +4,7 @@ if (!$connection) {
 }
 
 $sql = 'SELECT posts_title, posts_body, submission_date FROM posts';
-$fetch = mysql_query($sql, $connection);
+$fetch = mysql_query($sql, $connection); 
 if (!$fetch) {
     die('Query failed'. mysql_error());
 }
