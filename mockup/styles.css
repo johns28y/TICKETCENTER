@@ -1,12 +1,12 @@
 
-div.display-ticket {
+.display-ticket {
     font-family: Helvetica;
     font-size: 12 pt; 
     border: 3px solid black;
-    padding:10px;
+    padding: 10px;
 }
 
-div.design {
+.design {
     max-width: 800px; 
     font:Helvetica;
     text-align: center;
@@ -14,6 +14,10 @@ div.design {
     margin-right: auto;
 }
 
-body {
-    background-color: #ADD8E6;
+.body {
+    color: lightblue;
+}
+.center{
+    text-align: center;
+    border: 3px solid black;
 }

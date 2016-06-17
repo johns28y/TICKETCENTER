@@ -1,4 +1,4 @@
-$connection = mysql_connect("localhost","root","", "bulletinboard");
+$conn = new PDO ($dsn, $username, $password );
 if (!$connection) {
     die('Connection failed', mysql_error());
 }
