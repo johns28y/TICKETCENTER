@@ -1,23 +1,18 @@
 
-.display-ticket {
+.display-ticketinformation {
     font-family: Helvetica;
     font-size: 12 pt; 
-    border: 3px solid black;
-    padding: 10px;
 }
 
-.design {
+.center{
+    text-align: center;
+    background-color: #ADD8E6;
     max-width: 800px; 
-    font:Helvetica;
+    font-family:Helvetica;
+    padding: 10px;
+    border: 5px solid black;
+    font-size: 12pt;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-}
-
-.body {
-    color: lightblue;
-}
-.center{
-    text-align: center;
-    border: 3px solid black;
 }
