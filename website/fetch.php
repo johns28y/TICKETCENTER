@@ -2,8 +2,7 @@
 $dsn = 'mysql:host=localhost; dbname=bulletinboard';
 $username = 'TyreKing';
 $password = 'GoogleScholar1';
-
-$connection = new PDO ($bulletinboard, $TyreKing,"GoogleScholar1");
+$connection = new PDO ($dsn, $username, $password);
 
 if (!$connection) {
     die('Connection failed', mysql_error());
