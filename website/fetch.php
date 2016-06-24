@@ -3,14 +3,12 @@ $dsn = 'mysql:host=localhost; dbname=bulletinboard';
 $username = 'TyreKing';
 $password = 'GoogleScholar1';
 $connection = new PDO ($dsn, $username, $password);
-
 if (!$connection) {
     die('Connection failed', mysql_error());
 }
-
 $sql = 'SELECT title, body, date FROM posts';
+$fetch = mysql_query($sql, $connection); //this line is pending a rewrite of the object-oriented PDO methods in PHP.
 
-$fetch = mysql_query($sql, $connection); 
 if (!$fetch) {
     die('Query failed', mysql_error());
 }
@@ -19,7 +17,7 @@ while($row = mysql_fetch_assoc($fetch)) {
     echo $row["title"];
     echo $row["body"];
     echo $row["date"];
-}
+}//this while loop is pending a rewrite of the object-oriented methods in PHP.
 
 mysql_free_result($fetch);
 mysql_close($connection);
