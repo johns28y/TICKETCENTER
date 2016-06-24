@@ -1,23 +1,49 @@
 <?php
-$dsn = 'mysql:host=localhost; dbname=bulletinboard';
-$username = 'TyreKing';
+$dsn = 'mysql:host=127.0.0.1; dbname=bulletinboard';
+$username = 'root';
 $password = 'GoogleScholar1'; 
 $connection = new PDO ($dsn, $username, $password); 
-
-
-
-
 if (!$connection) {
-    die('Connection failed', mysql_error());
+    die('Connection failed' + mysql_error());
 }
-if(isset $_POST['submit']) {
+if (isset($_POST['submit'])) {
     $title = $_POST['title'];
     $body = $_POST['text'];
     $timestamp = date('Y-m-d H:i:s');
-    $query = mysql_query("INSERT INTO posts (title, body, date)") VALUES ( ($title, $body, $timestamp)")
+    mysql_query("INSERT INTO users (title, body, date) VALUES ('$title','$body','$timestamp')"); 
     }
-
-mysql_close($connection);
-
+$connection = NULL; 
 ?>
+
+!DOCTYPE html> 
+<html> 
+    <head>
+        <link rel = "stylesheet" type = "text/css" href = "styles.css">
+        <title> 
+            Ticket Center
+        </title>
+    </head> 
+    <body> 
+        <div class="ticket-list">
+            <h1> 
+                Add New Post 
+            </h1>
+            <a href = "index.html"> 
+                Visit Home
+            </a> 
+            <form name="htmlForm" id="htmlForm" method="POST" action="/Users/tyreking/bulletinboard/website/fetch.php"> 
+                Title: <br> 
+                <input type="text" name="title">
+                <br>
+                <br>
+                Text:
+                <br> 
+                <textarea rows="30" cols="50"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="submit">
+            </form>
+        </div>  
+    </body> 
+</html>
 
