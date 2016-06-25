@@ -15,23 +15,23 @@ if (isset($_POST['submit'])) {
 $connection = NULL; 
 ?>
 
-!DOCTYPE html> 
+<!DOCTYPE html> 
 <html> 
     <head>
-        <link rel = "stylesheet" type = "text/css" href = "styles.css">
+        <link href = 'styles.css' rel = 'stylesheet' type = "text/css" /> 
         <title> 
             Ticket Center
         </title>
     </head> 
     <body> 
-        <div class="ticket-list">
+        <div class='ticket-list'>
             <h1> 
                 Add New Post 
             </h1>
             <a href = "index.html"> 
                 Visit Home
             </a> 
-            <form name="htmlForm" id="htmlForm" method="POST" action="/Users/tyreking/bulletinboard/website/fetch.php"> 
+            <form name="htmlForm" id="htmlForm"  method="POST" action="/Users/tyreking/bulletinboard/website/fetch.php"> 
                 Title: <br> 
                 <input type="text" name="title">
                 <br>
@@ -46,4 +46,6 @@ $connection = NULL;
         </div>  
     </body> 
 </html>
+
+
 
