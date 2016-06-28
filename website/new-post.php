@@ -17,7 +17,7 @@ if (!empty($_POST)) {
     //echo $title;
     //echo $body;
     //echo $timestamp;
-    //echo $insert "<br>";
+    
     
     //this prepared statement changed everything and enabled for my post to enter the database.
     $prepared = $connection->prepare($insert);
@@ -29,9 +29,7 @@ if (!empty($_POST)) {
     }
     
     /*
-    //try to catch the result 
-    //after the insert see whether it worked. did it really happen? 
-    if($connection->query($insert)){
+
       $getID = "SELECT id FROM posts where title = '$title'"; 
         echo "your ticket posted successfully to database";
         header('Location: http://localhost/website/index.php?id=test');
