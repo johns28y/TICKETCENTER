@@ -19,6 +19,7 @@ if (!empty($_POST)) {
     //echo $timestamp;
     //echo $insert "<br>";
     
+    //this prepared statement changed everything and enabled for my post to enter the database.
     $prepared = $connection->prepare($insert);
     
     if($prepared->execute(array($title, $body, $timestamp))) {
