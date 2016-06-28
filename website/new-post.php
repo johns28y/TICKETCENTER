@@ -13,13 +13,6 @@ if (!empty($_POST)) {
     $body = $_POST['text'];
     $timestamp = date('Y-m-d H:i:s');
     $insert = "INSERT INTO posts (title, body, date) VALUES (?,?,?)";
-    
-    //echo $title;
-    //echo $body;
-    //echo $timestamp;
-    
-    
-    //this prepared statement changed everything and enabled for my post to enter the database.
     $prepared = $connection->prepare($insert);
     
     if($prepared->execute(array($title, $body, $timestamp))) {
@@ -27,16 +20,6 @@ if (!empty($_POST)) {
     } else {
         echo "error";
     }
-    
-    /*
-
-      $getID = "SELECT id FROM posts where title = '$title'"; 
-        echo "your ticket posted successfully to database";
-        header('Location: http://localhost/website/index.php?id=test');
-    }else{
-    echo "error processing your ticket";
-    }
-    */
 } else {
     echo "nothing is posted";
 }
