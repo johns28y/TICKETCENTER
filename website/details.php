@@ -1,19 +1,3 @@
-<?php
-$dsn = 'mysql:host=127.0.0.1; dbname=bulletinboard';
-$username = 'root';
-$password = 'GoogleScholar1'; 
-$connection = new PDO($dsn, $username, $password); 
-
-if(!$connection){
-    die('Connection failed' + mysql_error());
-}
-else{
-    $sql = 'SELECT body FROM posts'; 
-    echo $sql + $getID; 
-}
-
-?>
-
 <!DOCTYPE HTML>
 <html>  
     <head>
@@ -22,12 +6,32 @@ else{
         Ticket Center
         </title>
     </head>
-    <body> 
+    <body>
         <div class = "ticket-list">
             <h1>
             Ticket Center
             </h1>
-            <a href= "index.php" > Visit Home </a> 
+            <a href= "home.php" > Visit Home </a> 
         </div>
+
+<?php
+$dsn = 'mysql:host=127.0.0.1; dbname=bulletinboard';
+$username = 'root';
+$password = 'GoogleScholar1'; 
+$connection = new PDO($dsn, $username, $password); 
+if(!$connection){
+    die('Connection failed' + mysql_error());
+}
+$sql = 'SELECT title, body, date FROM posts'; 
+foreach($connection->query($sql) as $row){
+    $title = $row['title'];
+    $body = $row['body'];
+    $date = $row['date']."\n";
+    echo '<div class = "ticket">';
+    echo $title ." ". $body." ". $date;
+    echo '</div>';
+}
+?>
+
     </body>
 </html>

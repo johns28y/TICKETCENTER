@@ -6,7 +6,6 @@ $connection = new PDO ($dsn, $username, $password);
 if (!$connection) {
     die('Connection failed' + mysql_error());
 }
-
 $connection = NULL; 
 ?>
 
@@ -41,4 +40,3 @@ $connection = NULL;
         </div>  
     </body> 
 </html>
-
