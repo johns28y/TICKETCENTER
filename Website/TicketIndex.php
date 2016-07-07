@@ -34,12 +34,7 @@ foreach($connection->query($sql) as $row){
         $body . '</a>'; //." ". //$date;
     echo '</div>';
 }
-        //dynamic linking
-/*$i = 0; 
-while ($i < $num){
-    $f1 = 
-}
-*/
+       
 ?>
     </body>
 </html>
