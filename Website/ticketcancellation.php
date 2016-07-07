@@ -15,24 +15,24 @@
                 Go Home<br>
             </a> 
         </div>
-        <div data-role = "main" class = "ui-content"> 
-        <p>This is the section for us to take care of your ticket cancellation</p>
+        
+        <div class = "header">
+            <h1> We understand that you wish to cancel. </h1>
         </div>
         
-        <div data-role = "page" data-dialog = "true" id = "pagetwo"></div>
-          <div data-role = "header"> 
-             <h1> Identify your user status</h1>
+        <div class = "header"> 
+           <h1> You have made it to the correct section to take care of your ticket cancellation. </h1>
+        </div>
+        
+          <div class = "header"> 
+             <h1> Tap if you are the user that purchased or sold the ticket. </h1>
           </div>
         
-        <div data-role = "main" class = "ui-content"> </div>
-        <p>We understand that you wish to cancel. Please tell us more information about yourself. Tap if you are the user that purchased or sold the ticket. </p>
         <form action = ""> 
           <input type = "button" value = "Purchased"  onclick = "window.location.href ='ticketcancellationpurchased.php';"/>
           <input type = "button" value = "Sold"  onclick = "window.location.href ='ticketcancellationsold.php';"/>
-        </form>
-         
+        </form>    
     </body>
-
 <?php
 $dsn = 'mysql:host=127.0.0.1; dbname = bulletinboard';
 $username = 'root';
