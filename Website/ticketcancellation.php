@@ -11,6 +11,9 @@
             <h5>
             Ticket Center
             </h5>
+            <a href = "home.php"> 
+                Go Home<br>
+            </a> 
         </div>
         <div data-role = "main" class = "ui-content"> 
         <p>This is the section for us to take care of your ticket cancellation</p>
