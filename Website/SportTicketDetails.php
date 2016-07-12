@@ -33,8 +33,7 @@ foreach($connection->query($sql) as $row){
     $id = $row['id'];
     //$date = $row['date']."\n";
     echo '<div class = "ticket">';
-    echo $title;
-    echo $body;
+    echo ("noteworthy info for buyer on ticket part 1");
     echo '</div>';
 }
       

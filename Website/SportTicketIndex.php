@@ -31,15 +31,10 @@ foreach($connection->query($sql) as $row){
     //$date = $row['date']."\n";
     echo '<div class = "ticket">';
     echo '<a href=SportTicketDetails.php?id='.$id.'>'. $title ." ". 
-        $body . '</a>'; //." ". //$date;
+    $body . '</a>'; //." ". //$date;
     echo '</div>';
 }
-        //dynamic linking
-/*$i = 0; 
-while ($i < $num){
-    $f1 = 
-}
-*/
+        
 ?>
     </body>
 </html>
