@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>  
+<html>
     <head>
         <link rel = "stylesheet" type = "text/css" href = "styles.css">
         <title>
@@ -8,14 +8,15 @@
     </head>
     <body>
         <div class = "ticket-list">
-            <h1>
-            Ticket Center
-            </h1>
-        <form action = ""> 
+           <h1>
+           Ticket Center  
+           </h1>
+     <form action = ""> 
          <input type = "button" value = "home" onclick = "window.location.href = 'home.php';"/>
-        </form>
-        </div>
-     
+    </form>
+     </div>
+    
+    
 <?php
 $dsn = 'mysql:host=127.0.0.1; dbname=bulletinboard';
 $username = 'root';
@@ -24,18 +25,8 @@ $connection = new PDO($dsn, $username, $password);
 if(!$connection){
     die('Connection failed' + mysql_error());
 }
-$sql = 'SELECT id, title, body, date FROM posts'; 
-foreach($connection->query($sql) as $row){
-    $title = $row['title'];
-    $body = $row['body'];
-    $id = $row['id'];
-    //$date = $row['date']."\n";
-    echo '<div class = "ticket">';
-    echo '<a href=SportTicketDetails.php?id='.$id.'>'. $title ." ". 
-    $body . '</a>'; //." ". //$date;
-    echo '</div>';
-}
-        
-?>
+?> 
     </body>
 </html>
+    
+    

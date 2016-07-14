@@ -12,8 +12,8 @@
             Ticket Center
             </h5>
     <form action = "">
-       <input type = "button" value = "Purchase"  onclick = "window.location.href ='sportticketindex.php';"/>
-       <input type = "button" value = "Sell" onclick = "window.location.href = 'sportcomposer.php';"/>  
+       <input type = "button" value = "Find"  onclick = "window.location.href ='ticketportalindex.php';"/>
+       <input type = "button" value = "Post" onclick = "window.location.href = 'ticketportalcomposer.php';"/>  
       <input type = "button" value = "Cancel" onclick = "window.location.href = 'ticketcancellation.php';"/>                                               
     </form>
         </div>

@@ -19,3 +19,22 @@
 .ticket {
     text-align: center;
 }
+
+.ui-content{
+    text-align: center;
+}
+.header{
+    display: block
+    width: 300px;
+    border: 25px solid blue;
+    padding: 25px;
+    margin: 25px;
+}
+
+.wrap{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+}
+#brand-in-navbar {
+    width: auto;
+    height: 50px;
+}

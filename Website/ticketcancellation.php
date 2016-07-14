@@ -11,9 +11,9 @@
             <h5>
             Ticket Center
             </h5>
-            <a href = "home.php"> 
-                Go Home<br>
-            </a> 
+            <form action = ""> 
+            <input type = "button" value = "home" onclick = "window.location.href = 'home.php';"/>
+    </form>
         </div>
         
         <div class = "header">
@@ -26,6 +26,7 @@
         
           <div class = "header"> 
              <h1> Tap if you are the user that purchased or sold the ticket. </h1>
+              display: block;
           </div>
         
         <form action = ""> 

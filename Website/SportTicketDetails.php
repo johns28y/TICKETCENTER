@@ -11,9 +11,9 @@
             <h1>
             Ticket Center
             </h1>
-            <a href = "home.php"> 
-                Go Home<br>
-            </a> 
+         <form action = ""> 
+         <input type = "button" value = "home" onclick = "window.location.href = 'home.php';"/>
+         </form>
         </div>
 <?php
 $dsn = 'mysql:host=127.0.0.1; dbname=bulletinboard';
@@ -26,7 +26,6 @@ if(!$connection){
           
         $getId=$_GET["id"];
         $sql = 'SELECT * FROM posts where id='.$getId; 
-        //input phone number variable above        
 foreach($connection->query($sql) as $row){
     $title = $row['title'];
     $body = $row['body'];

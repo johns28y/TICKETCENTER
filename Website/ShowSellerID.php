@@ -11,7 +11,9 @@
             <h1>
             Ticket Center
             </h1>
-            <a href= "home.php" > Go Home </a> 
+        <form action = "">
+           <input type = "button" value = "home"  onclick = "window.location.href ='home.php';"/>  
+        </form>
         </div>
 
 <?php

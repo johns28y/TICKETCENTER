@@ -19,20 +19,55 @@ $connection = NULL;
     <body> 
         <div class='ticket-list'>
             <h1> 
-                Sell a Ticket<br>
+              Post a Sport Ticket<br>
             </h1>
-            <a href = "home.php"> 
-                Go Home<br>
-            </a> 
-            <form action = "NewPosts.php" method = "post">
-                Sport: <br> 
-                <input type="text" name="category">
+            <form action = ""> 
+            <input type = "button" value = "home" onclick = "window.location.href = 'home.php';"/>
+            </form>
+            <form action = "NewSportPosts.php" method = "post">
+                sport: <br> 
+                <input type="text" name="sport">
                 <br>
                 <br>
-                Teams, City:
+                hometeam:
                 <br> 
-                <input type = "text" name = "location"> 
+                <input type = "text" name = "hometeam"> 
                 <br>
+                <br>
+                awayteam: 
+                <br> 
+                <input type = "text" name = "awayteam">
+                <br>
+                <br> 
+                starathlete1: 
+                <br>
+                <input type = "text" name = "starathlete1"> 
+                <br>
+                <br> 
+                starathlete2: 
+                <br> 
+                <input type = "text" name = "starathlete2">
+                <br>
+                <br>
+                stadium: 
+                <br>
+                <input type = "text" name = "stadium"> 
+                <br> 
+                <br> 
+                city: 
+                <br> 
+                <input type = "text" name = "city"> 
+                <br>
+                <br>
+                gametime: 
+                <br> 
+                <input type = "text" name = "gametime"> 
+                <br> 
+                <br> 
+                seat: 
+                <br>  
+                <input type = "text" name = "seat"> 
+                <br> 
                 <br>
                 <input type="submit" >
             </form>
