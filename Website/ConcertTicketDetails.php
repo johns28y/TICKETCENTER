@@ -11,11 +11,10 @@
             <h1>
             Ticket Center
             </h1>
-        <form action = ""> 
+         <form action = ""> 
          <input type = "button" value = "home" onclick = "window.location.href = 'home.php';"/>
-        </form>
+         </form>
         </div>
-     
 <?php
 $dsn = 'mysql:host=127.0.0.1; dbname=bulletinboard';
 $username = 'root';
@@ -24,19 +23,23 @@ $connection = new PDO($dsn, $username, $password);
 if(!$connection){
     die('Connection failed' + mysql_error());
 }
-$sql = 'SELECT * FROM Sportposts'; 
+    $getId=$_GET["id"];
+  $sql = 'SELECT * FROM Concertposts where id='.$getId; 
 foreach($connection->query($sql) as $row){
-    $sport = $row['sport'];
-    $hometeam = $row['hometeam'];
-    $awayteam = $row['awayteam'];
-    $id = $row['id'];
+    $venue = $row['venue'];
+    $performer = $row['performer'];
+    $city = $row['city'];
+    $showtime = $row['showtime'];
+    $seat = $row['seat'];
     //$date = $row['date']."\n";
     echo '<div class = "ticket">';
-    echo '<a href=SportTicketDetails.php?id='.$id.'>'. $sport ." ". $hometeam ." ". $awayteam ." " ; 
-    echo '</div>';
-    //mehmet am I printing this right?
-}
-        
-?>
-    </body>
+    echo $venue . '<br>';
+    echo $performer . '<br>';
+    echo $city . '<br>';
+    echo $showtime . '<br>';
+    echo $seat . '<br>';
+    echo '</div>';    
+}   
+?>  
+   </body>
 </html>

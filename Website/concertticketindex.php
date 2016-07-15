@@ -25,7 +25,17 @@ $connection = new PDO($dsn, $username, $password);
 if(!$connection){
     die('Connection failed' + mysql_error());
 }
-?> 
+$sql = 'SELECT id, venue, performer, city FROM Concertposts'; 
+foreach($connection->query($sql) as $row){
+    $venue = $row['venue'];
+    $performer = $row['performer'];
+    $city = $row['city'];
+    $id = $row['id'];
+    echo '<div class = "ticket">';
+    echo '<a href=ConcertTicketDetails.php?id='.$id.'>'. $venue ." ". $performer ." ". $city ." " ; 
+    echo '</div>';
+}
+?>    
     </body>
 </html>
     

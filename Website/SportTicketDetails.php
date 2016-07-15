@@ -24,16 +24,29 @@ if(!$connection){
     die('Connection failed' + mysql_error());
 }
           
-        $getId=$_GET["id"];
-        $sql = 'SELECT * FROM posts where id='.$getId; 
+  $getId=$_GET["id"];
+  $sql = 'SELECT * FROM Sportposts where id='.$getId; 
 foreach($connection->query($sql) as $row){
-    $title = $row['title'];
-    $body = $row['body'];
-    $id = $row['id'];
+    $starathlete1 = $row['starathlete1'];
+    $starathlete2 = $row['starathlete2'];
+    $stadium = $row['stadium'];
+    $city = $row['city'];
+    $gametime = $row['gametime'];
+    $seat = $row['seat'];
+    $awayteam = $row['awayteam'];
+    $hometeam = $row['hometeam'];
     //$date = $row['date']."\n";
     echo '<div class = "ticket">';
-    echo ("noteworthy info for buyer on ticket part 1");
+    echo $awayteam . '<br>';
+    echo $hometeam . '<br>';
+    echo $starathlete1 . '<br>';
+    echo $starathlete2 . '<br>';
+    echo $stadium . '<br>';
+    echo $city . '<br>';
+    echo $gametime . '<br>';
+    echo $seat . '<br>';
     echo '</div>';
+    
 }
       
 ?>

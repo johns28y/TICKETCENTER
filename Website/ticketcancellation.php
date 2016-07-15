@@ -26,7 +26,6 @@
         
           <div class = "header"> 
              <h1> Tap if you are the user that purchased or sold the ticket. </h1>
-              display: block;
           </div>
         
         <form action = ""> 

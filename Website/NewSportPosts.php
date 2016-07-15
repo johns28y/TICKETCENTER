@@ -21,12 +21,10 @@ if (!empty($_POST)) {
     $insert = "INSERT INTO Sportposts (sport, hometeam, awayteam, starathlete1, starathlete2, stadium, city, gametime, seat, date) VALUES (?,?,?,?,?,?,?,?,?,?)";
     $prepared = $connection->prepare($insert);
     if($prepared->execute(array($sport, $hometeam, $awayteam, $starathlete1, $starathlete2, $stadium, $city, $gametime, $seat, $timestamp))) {
-        header('Location: http://localhost/website/ShowSellerID.php');
+        header('Location: http://localhost/website/ShowSportSellerID.php');
     } else {
         echo "error";
     }
-    
-  
 } else {
     echo "nothing is posted";
    
