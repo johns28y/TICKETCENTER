@@ -34,7 +34,6 @@ foreach($connection->query($sql) as $row){
     echo '<div class = "ticket">';
     echo '<a href=SportTicketDetails.php?id='.$id.'>'. $sport ." ". $hometeam ." ". $awayteam ." " ; 
     echo '</div>';
-    //mehmet am I printing this right?
 }
         
 ?>
