@@ -48,9 +48,8 @@ foreach($connection->query($sql) as $row){
     echo '</div>';
     
 }
-      
 ?>
-        
+<input type = "button" value = "Continue Payment" onclick = "window.location.href = 'sportticketpaymentoptions.php';"/>
    </body>
 </html>
 

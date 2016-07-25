@@ -13,8 +13,9 @@
             </h1>
          <form action = ""> 
          <input type = "button" value = "home" onclick = "window.location.href = 'home.php';"/>
-         </form>
+            </form>
         </div>
+        
 <?php
 $dsn = 'mysql:host=127.0.0.1; dbname=bulletinboard';
 $username = 'root';
@@ -23,9 +24,9 @@ $connection = new PDO($dsn, $username, $password);
 if(!$connection){
     die('Connection failed' + mysql_error());
 }
-    $getId=$_GET["id"];
+  $getId=$_GET["id"];
   $sql = 'SELECT * FROM Concertposts where id='.$getId; 
-foreach($connection->query($sql) as $row){
+   foreach($connection->query($sql) as $row){
     $venue = $row['venue'];
     $performer = $row['performer'];
     $city = $row['city'];
@@ -38,8 +39,11 @@ foreach($connection->query($sql) as $row){
     echo $city . '<br>';
     echo $showtime . '<br>';
     echo $seat . '<br>';
-    echo '</div>';    
+    echo '</div>';  
 }   
+      
 ?>  
+    
+<input type = "button" value = "Continue Payment" onclick = "window.location.href = 'concertticketpaymentoptions.php';"/>
    </body>
 </html>
