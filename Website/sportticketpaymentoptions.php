@@ -18,8 +18,8 @@
 </html>
 <a href=SquarePortal.php>
 <img src="square.png" style='width:100px;height:100px' hspace="50">
-<a href=Braintreeportal.php>
-<img src="Venmo.png" style='width:100px;height:100px' hspace="50">
+<!-- <a href=Braintreeportal.php>
+<img src="Venmo.png" style='width:100px;height:100px' hspace="50"> -->
 <a href = socialdonation.php>
 <img src = "groupusericon.png" style ='width:100px;height:100px' hspace = "50">
 
