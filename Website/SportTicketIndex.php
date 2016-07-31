@@ -16,14 +16,15 @@
         </form>
         </div>
      
-<?php
+ <?php
 $dsn = 'mysql:host=127.0.0.1; dbname=bulletinboard';
 $username = 'root';
 $password = 'GoogleScholar1'; 
-$connection = new PDO($dsn, $username, $password); 
-if(!$connection){
+$connection = new PDO ($dsn, $username, $password); 
+if (!$connection) {
     die('Connection failed' + mysql_error());
 }
+
 $sql = 'SELECT * FROM Sportposts'; 
 foreach($connection->query($sql) as $row){
     $sport = $row['sport'];

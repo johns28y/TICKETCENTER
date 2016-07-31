@@ -16,10 +16,5 @@
     <br>
     </body>
 </html>
-<a href=SquarePortal.php>
+<a href=SquareCashPaymentForm.php>
 <img src="square.png" style='width:100px;height:100px' hspace="50">
-<!-- <a href=Braintreeportal.php>
-<img src="venmo.png" style='width:100px;height:100px' hspace="50"> -->      
-<a href = socialdonation.php>
-<img src = "GroupUserIcon.png" style ='width:100px;height:100px' hspace = "50">
-

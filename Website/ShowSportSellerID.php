@@ -15,7 +15,6 @@
            <input type = "button" value = "home"  onclick = "window.location.href ='home.php';"/>  
         </form>
         </div>
-
 <?php
 $dsn = 'mysql:host=127.0.0.1; dbname=bulletinboard';
 $username = 'root';
@@ -32,6 +31,6 @@ $hometeam = $data[0]['hometeam'];
 $awayteam = $data[0]['awayteam'];
 $id = $data[0]['id'];
 echo "$sport, $hometeam, $awayteam, $id";
-
-?>
+?> <p>
+<input type = "button" value = "Continue" onclick = "window.location.href = 'squarecashinformation.php';"/></p>
 	

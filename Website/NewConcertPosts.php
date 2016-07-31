@@ -6,6 +6,7 @@ $connection = new PDO($dsn, $username, $password);
 if (!$connection) {
    die('Connection failed' + mysql_error());
 }
+
 if (!empty($_POST)){
     $venue = $_POST['venue'];//1
     $performer = $_POST['performer'];//2
@@ -26,7 +27,6 @@ if (!empty($_POST)){
 }
 $connection = NULL; 
 ?>
-
 
 
 

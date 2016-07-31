@@ -15,16 +15,16 @@
          <input type = "button" value = "home" onclick = "window.location.href = 'home.php';"/>
     </form>
      </div>
-    
-    
+     
 <?php
 $dsn = 'mysql:host=127.0.0.1; dbname=bulletinboard';
 $username = 'root';
 $password = 'GoogleScholar1'; 
-$connection = new PDO($dsn, $username, $password); 
-if(!$connection){
+$connection = new PDO ($dsn, $username, $password); 
+if (!$connection) {
     die('Connection failed' + mysql_error());
 }
+
 $sql = 'SELECT id, venue, performer, city FROM Concertposts'; 
 foreach($connection->query($sql) as $row){
     $venue = $row['venue'];

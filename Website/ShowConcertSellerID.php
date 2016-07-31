@@ -30,5 +30,6 @@ $venue = $data[0]['venue'];
 $performer = $data[0]['performer'];
 $city = $data[0]['city'];
 $id = $data[0]['id'];
-echo "$venue, $performer, $city, $id";
-?>
+echo "$venue, $performer, $city, $id"; 
+?><p>
+<input type = "button" value = "Continue" onclick = "window.location.href = 'squarecashinformation.php';"/></p>

@@ -1,12 +1,11 @@
-<?php 
+ <?php
 $dsn = 'mysql:host=127.0.0.1; dbname=bulletinboard';
 $username = 'root';
 $password = 'GoogleScholar1'; 
-$connection = new PDO($dsn, $username, $password); 
+$connection = new PDO ($dsn, $username, $password); 
 if (!$connection) {
-   die('Connection failed' + mysql_error());
+    die('Connection failed' + mysql_error());
 }
-
 if (!empty($_POST)) {
     $sport = $_POST['sport'];//1
     $hometeam = $_POST['hometeam'];//2
@@ -20,7 +19,7 @@ if (!empty($_POST)) {
     $timestamp = date('Y-m-d H:i:s');
     $insert = "INSERT INTO Sportposts (sport, hometeam, awayteam, starathlete1, starathlete2, stadium, city, gametime, seat, date) VALUES (?,?,?,?,?,?,?,?,?,?)";
     $prepared = $connection->prepare($insert);
-    if($prepared->execute(array($sport, $hometeam, $awayteam, $starathlete1, $starathlete2, $stadium, $city, $gametime, $seat, $timestamp))) {
+    if($prepared->execute(array($sport, $hometeam, $awayteam, $starathlete1,$starathlete2, $stadium, $city, $gametime, $seat, $uniqueid, $timestamp))) {
         header('Location: http://localhost/website/ShowSportSellerID.php');
     } else {
         echo "error";
@@ -31,6 +30,7 @@ if (!empty($_POST)) {
 }
 $connection = NULL; 
 ?>
+
 
 
 
