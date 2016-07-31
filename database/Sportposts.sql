@@ -1,0 +1,13 @@
+CREATE TABLE Sportposts(
+  Sport_id MEDIUMINT NOT NULL primary key AUTO_INCREMENT,
+  sport VARCHAR(255) NOT NULL,
+  hometeam VARCHAR(255) NOT NULL,
+  awayteam VARCHAR(255) NOT NULL,
+  starathlete1 VARCHAR(255) NOT NULL,
+  starathlete2 VARCHAR(255) NOT NULL,
+  stadium VARCHAR(255) NOT NULL,
+  city VARCHAR(255) NOT NULL,
+  gametime VARCHAR(255) NOT NULL, 
+  seat VARCHAR(255) NOT NULL, 
+  date DATETIME NOT NULL 
+) ENGINE = InnoDB;
