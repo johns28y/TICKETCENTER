@@ -4,7 +4,7 @@
     <head> 
     <link href = "../../styles.css" rel = 'stylesheet' type = "text/css" >
         <title> 
-        Bulletin Board
+        Ticket Center
         </title>
     </head>
     <body> 
