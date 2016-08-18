@@ -1,0 +1,1 @@
+https://www.quora.com/How-does-Square-Cash-work-technically
