@@ -3,20 +3,20 @@
     <head>
         <link rel = "stylesheet" type = "text/css" href = "../../styles.css">
         <title>
-        Bulletin Board
+        Ticket Center
         </title>
     </head>
     <body>
         <div class = "ticket-list">
             <h1>
-            Bulletin Board
+            Ticket Center
             </h1>
         <form action = "">
            <input type = "button" value = "home"  onclick = "window.location.href ='http://localhost/website/bulletinboardhome.php';"/>  
         </form>
         </div>
 <?php
-$dsn = 'mysql:host=127.0.0.1; dbname=bulletinboard';
+$dsn = 'mysql:host=127.0.0.1; dbname=TICKETCENTER';
 $username = 'root';
 $password = 'GoogleScholar1';
 $connection = new PDO ($dsn, $username, $password);
