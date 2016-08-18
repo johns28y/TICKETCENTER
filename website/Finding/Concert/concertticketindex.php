@@ -3,7 +3,7 @@
     <head>
         <link rel = "stylesheet" type = "text/css" href = "../../styles.css">
         <title>
-        Bulletin Board
+        Ticket Center
         </title>
     </head>
     <body>
@@ -17,16 +17,13 @@
      </div>
     
 <?php
-$dsn = 'mysql:host=127.0.0.1; dbname=bulletinboard';
+$dsn = 'mysql:host=127.0.0.1; dbname=ticketcenter';
 $username = 'root';
 $password = 'GoogleScholar1'; 
 $connection = new PDO ($dsn, $username, $password); 
 if (!$connection) {
     die('Connection failed' + mysql_error());
 }
-
-
-
 $sql = 'SELECT concert_id, venue, performer, city FROM Concert'; 
 foreach($connection->query($sql) as $row){
     $venue = $row['venue'];
