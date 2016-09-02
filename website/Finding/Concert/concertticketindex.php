@@ -24,9 +24,6 @@ $connection = new PDO ($dsn, $username, $password);
 if (!$connection) {
     die('Connection failed' + mysql_error());
 }
-
-
-
 $sql = 'SELECT concert_id, venue, performer, city FROM Concert'; 
 foreach($connection->query($sql) as $row){
     $venue = $row['venue'];

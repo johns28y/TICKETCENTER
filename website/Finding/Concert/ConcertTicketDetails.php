@@ -3,7 +3,7 @@
     <head>
         <link rel = "stylesheet" type = "text/css" href = "../../styles.css">
         <title>
-        Bulletin Board
+        Ticket Center
         </title>
     </head>
     <body>

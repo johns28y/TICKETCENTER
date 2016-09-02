@@ -32,4 +32,5 @@ $city = $data[0]['city'];
 $concert_id = $data[0]['concert_id'];
 echo "$venue, $performer, $city, $concert_id";
 ?> <p>
-<input type = "button" value = "Completed" onclick = "window.location.href = '/website/BulletinBoardHome.php';"/></p>
+<input type = "button" value = "Completed" onclick = "window.location.href = '/website/TicketCenterHome.php';"/></p>
+

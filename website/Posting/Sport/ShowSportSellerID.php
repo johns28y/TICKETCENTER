@@ -33,4 +33,4 @@ $sport_id = $data[0]['sport_id'];
 echo "$sport, $hometeam, $awayteam, $sport_id";
 ?> <p>
 <input type = "button" value = "Completed" onclick = "window.location.href = '/website/TicketCenterHome.php';"/></p>
-	
+
