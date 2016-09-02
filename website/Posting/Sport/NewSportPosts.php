@@ -1,8 +1,9 @@
 <?php
-$dsn = 'mysql:host=127.0.0.1; dbname=bulletinboard';
+$dsn = 'mysql:host=127.0.0.1; dbname=TICKETCENTER';
 $username = 'root';
 $password = 'GoogleScholar1'; 
 $connection = new PDO ($dsn, $username, $password); 
+array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING);
 if (!$connection) {
     die('Connection failed' + mysql_error());
 }
@@ -19,10 +20,11 @@ if (!empty($_POST)) {
     $emailaddress = $_POST['emailaddress'];//10
     $phonenumber = $_POST['phonenumber'];//11
     $ticketcost = $_POST['ticketcost'];//12
+    
    // $timestamp = date('Y-m-d H:i:s');
     $insert = "INSERT INTO Sport(sport, hometeam, awayteam, starathlete1, starathlete2, stadium, city, gametime, seat, emailaddress, phonenumber, ticketcost) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)";
     $prepared = $connection->prepare($insert);
-    if($prepared->execute(array($sport, $hometeam, $awayteam, $starathlete1, $starathlete2, $stadium, $city,       $gametime, $seat, $emailaddress, $phonenumber, $ticketcost))) {
+    if($prepared->execute(array($sport, $hometeam, $awayteam, $starathlete1, $starathlete2, $stadium, $city, $gametime, $seat, $emailaddress, $phonenumber, $ticketcost))) {
         header('Location: http://localhost/website/Posting/Sport/ShowSportSellerID.php');
     } else {
         echo "error";

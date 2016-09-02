@@ -3,7 +3,7 @@
     <head>
         <link rel = "stylesheet" type = "text/css" href = "../../styles.css">
         <title>
-        Bulletin Board
+        Ticket Center
         </title>
     </head>
     <body>
@@ -12,12 +12,12 @@
            TICKET CENTER
            </h1>
      <form action = ""> 
-         <input type = "button" value = "HOME" onclick = "window.location.href = '/website/bulletinboardhome.php';"/>
+         <input type = "button" value = "HOME" onclick = "window.location.href = '/website/TicketCenterHome.php';"/>
     </form>
      </div>
     
 <?php
-$dsn = 'mysql:host=127.0.0.1; dbname=bulletinboard';
+$dsn = 'mysql:host=127.0.0.1; dbname=TICKETCENTER';
 $username = 'root';
 $password = 'GoogleScholar1'; 
 $connection = new PDO ($dsn, $username, $password); 

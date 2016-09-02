@@ -4,7 +4,7 @@
     <head> 
     <link href = "../../styles.css" rel = 'stylesheet' type = "text/css" >
         <title> 
-        Bulletin Board
+        Ticket Center
         </title>
     </head>
     <body> 
@@ -13,7 +13,7 @@
                 POST CONCERT TICKET<br> 
             </h1>
           <form action = ""> 
-         <input type = "button" value = "HOME" onclick = "window.location.href = '/website/bulletinboardhome.php';"/>
+         <input type = "button" value = "HOME" onclick = "window.location.href = '/website/TicketCenterHome.php';"/>
           </form>
         <form action = "NewConcertPosts.php" method = "post">
             Venue: <br>
@@ -55,7 +55,7 @@
             <input type = "text" name = "ticketcost">
             <br>
             <br>
-            <input type = "submit" value = "SUBMIT CONCERT TICKET" />
+            <input type = "submit" value = "Submit Concert Ticket" />
         </form>
         </div>
     </body>

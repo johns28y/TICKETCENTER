@@ -3,7 +3,7 @@
     <head>
         <link href = "../../styles.css" rel = 'stylesheet' type = "text/css" /> 
         <title> 
-            Bulletin Board
+            Ticket Center
         </title>
     </head> 
     <body> 
@@ -12,7 +12,7 @@
               Post Sport Ticket<br>
             </h1>
             <form action = "/posting/sport/NewSportPosts.php"> 
-            <input type = "button" value = "HOME" onclick = "window.location.href = '/website/bulletinboardhome.php';"/>
+            <input type = "button" value = "HOME" onclick = "window.location.href = '/website/TicketCenterHome.php';"/>
             </form>
             <form action = "NewSportPosts.php" method = "post">
                 SPORT: <br> 

@@ -3,7 +3,7 @@
     <head>
         <link rel = "stylesheet" type = "text/css" href = "styles.css">
         <title>
-         Bulletin Board
+        Ticket Center
         </title>
     </head>
     <body>
@@ -12,7 +12,7 @@
             TICKET CENTER
            </h1>
              <form action = ""> 
-              <input type = "button" value = "HOME" onclick = "window.location.href = 'BulletinboardHome.php';"/>
+              <input type = "button" value = "HOME" onclick = "window.location.href = 'TicketCenterHome.php';"/>
             </form>
         </div>
         <form action = " "> 

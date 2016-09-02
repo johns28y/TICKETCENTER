@@ -12,7 +12,7 @@
             TICKET CENTER
            </h1>
             <form action = ""> 
-              <input type = "button" value = "HOME" onclick = "window.location.href = '/website/bulletinboardhome.php';"/>
+              <input type = "button" value = "HOME" onclick = "window.location.href = '/website/TicketCenterHome.php';"/>
             </form>
         </div>
     <form action = ""> 

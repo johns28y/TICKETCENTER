@@ -12,11 +12,11 @@
             TICKET CENTER
             </h1>
          <form action = ""> 
-         <input type = "button" value = "HOME" onclick = "window.location.href = '/website/bulletinboardhome.php';"/>
+         <input type = "button" value = "HOME" onclick = "window.location.href = '/website/TicketCenterHome.php';"/>
             </form>
         </div>
 <?php
-$dsn = 'mysql:host=127.0.0.1; dbname=bulletinboard';
+$dsn = 'mysql:host=127.0.0.1; dbname=TICKETCENTER';
 $username = 'root';
 $password = 'GoogleScholar1'; 
 $connection = new PDO ($dsn, $username, $password); 
@@ -44,6 +44,6 @@ if (!$connection) {
 ?>  
 
 <div class = "ticket">
-<input type = "button" value = "Take this ticket" onclick = "window.location.href = '/website/Finding/Concert/SquareCash/SquareEmail.php';"/>
+<input type = "button" value = "Take this ticket" onclick = "window.location.href = '';"/>
    </body>
 </html>
