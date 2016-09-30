@@ -16,21 +16,20 @@
         </form>
         </div>
 <?php
-$dsn = 'mysql:host=127.0.0.1; dbname=TICKETCENTER';
+$dsn = 'mysql:host=127.0.0.1; dbname=ticketcenter';
 $username = 'root';
 $password = 'GoogleScholar1';
 $connection = new PDO ($dsn, $username, $password);
 if (!$connection) {
     die('Connection failed:' + mysql_error());
 }
-$sql = 'SELECT venue, performer, city, concert_id FROM Concert where concert_id = (select max(concert_id) from Concert)';
+$sql = 'SELECT address, description FROM CONCERT where concert_id = (select max(concert_id) from CONCERT)';
 $result = $connection->query($sql);
 $data = $result->fetchAll();
-$venue = $data[0]['venue'];
-$performer = $data[0]['performer'];
-$city = $data[0]['city'];
+$address = $data[0]['address'];
+$description = $data[0]['description'];
 $concert_id = $data[0]['concert_id'];
-echo "$venue, $performer, $city, $concert_id";
+echo "$address, $description, $concert_id";
 ?> <p>
 <input type = "button" value = "Completed" onclick = "window.location.href = '/website/TicketCenterHome.php';"/></p>
 

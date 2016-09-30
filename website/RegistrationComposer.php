@@ -14,25 +14,25 @@
               Registration<br>
             </h1>
             <form action = "NewRegistrationPost.php" method = "post">
-                First Name: 
+                firstname: 
                 <br> 
                 <input type = "text" name = "firstname"> 
                 <br>
                 <br>
-                Last Name: 
+                lastname: 
                 <br> 
                 <input type = "text" name = "lastname"> 
                 <br> 
                 <br> 
-                Phone Number: 
+                phonenumber: 
                 <br>  
-                <input type = "text" name = "phonenumber">  
+                <input type = "tel" name = "phonenumber">  
                 <br> 
                 <br>
                 <br>
-                Email Address:
+                email:
                 <br>
-                <input type = "text" name = "emailaddress">
+                <input type = "email" name = "email">
                 <br>
                 <br>
                 Password:

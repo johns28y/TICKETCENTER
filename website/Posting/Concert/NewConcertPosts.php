@@ -1,5 +1,5 @@
 <?php 
-$dsn = 'mysql:host=127.0.0.1; dbname=TICKETCENTER';
+$dsn = 'mysql:host=127.0.0.1; dbname=ticketcenter';
 $username = 'root';
 $password = 'GoogleScholar1'; 
 $connection = new PDO($dsn, $username, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
@@ -8,17 +8,14 @@ if (!$connection) {
 }
 
 if (!empty($_POST)){
-    $venue = $_POST['venue'];//1
-    $performer = $_POST['performer'];//2
-    $city = $_POST['city'];//3
-    $showtime = $_POST['showtime'];//4
-    $seat = $_POST['seat'];//5
-    $emailaddress = $_POST['emailaddress'];
-    $phonenumber = $_POST['phonenumber'];
-    $ticketcost = $_POST['ticketcost'];
-    $insert = "INSERT INTO Concert(venue, performer, city, showtime, seat, emailaddress, phonenumber, ticketcost) VALUES (?,?,?,?,?,?,?,?)";
+    $concertname = $_POST['concertname'];//2
+    $address = $_POST['address'];//3
+    $groupname = $_POST['groupname'];//4
+    $description = $_POST['description'];//5
+    $time = $_POST['time'];
+    $insert = "INSERT INTO CONCERT(concertname, address, groupname, description, time) VALUES (?,?,?,?,?)";
     $prepared = $connection->prepare($insert);
-    if($prepared->execute(array($venue, $performer,$city,$showtime,$seat, $emailaddress,$phonenumber,$ticketcost))) {
+    if($prepared->execute(array($concertname, $address, $groupname, $description, $time))) {
         header('Location: http://localhost/website/Posting/Concert/ShowConcertSellerID.php');
     } else {
         print_r($connection->errorInfo());

@@ -27,13 +27,13 @@ if (!$connection) {
 
 $sql = 'SELECT * FROM Sport'; 
 foreach($connection->query($sql) as $row){
-    $sport = $row['sport'];
-    $hometeam = $row['hometeam'];
-    $awayteam = $row['awayteam'];
-    $sport_id = $row['sport_id'];
+    $eventname = $row['eventname'];
+    $address = $row['address'];
+    $description = $row['description'];
+    $sportid = $row['sportid'];
     //$date = $row['date']."\n";
     echo '<div class = "ticket">';
-    echo '<a href=SportTicketDetails.php?id='.$sport_id.'>'. $sport ." ". $hometeam ." ". $awayteam ." " ; 
+    echo '<a href=SportTicketDetails.php?id='.$sportid.'>'. $eventname ." ". $address ." ". $description ." " ; 
     echo '</div>';
 }
         

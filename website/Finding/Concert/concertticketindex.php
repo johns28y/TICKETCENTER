@@ -24,14 +24,14 @@ $connection = new PDO ($dsn, $username, $password);
 if (!$connection) {
     die('Connection failed' + mysql_error());
 }
-$sql = 'SELECT concert_id, venue, performer, city FROM Concert'; 
+$sql = 'SELECT * FROM Concert'; 
 foreach($connection->query($sql) as $row){
-    $venue = $row['venue'];
-    $performer = $row['performer'];
-    $city = $row['city'];
-    $concert_id = $row['concert_id'];
+    $concertname = $row['concertname'];
+    $address = $row['address'];
+    $groupname = $row['groupname'];
+    $concertid = $row['concertid'];
     echo '<div class = "ticket">';
-    echo '<a href=ConcertTicketDetails.php?id='.$concert_id.'>'. $venue ." ". $performer ." ". $city ." " ; 
+    echo '<a href=ConcertTicketDetails.php?id='.$concertid.'>'. $concertname ." ". $address ." ". $groupname." " ; 
     echo '</div>';
 }
 ?>    

@@ -10,52 +10,37 @@
     <body> 
         <div class = 'ticket-list'>
             <h1> 
-                POST CONCERT TICKET<br> 
+                CREATE EVENT<br> 
             </h1>
           <form action = ""> 
          <input type = "button" value = "HOME" onclick = "window.location.href = '/website/TicketCenterHome.php';"/>
           </form>
         <form action = "NewConcertPosts.php" method = "post">
-            Venue: <br>
-            <input type = "text" name = "venue">
+            concertname: <br>
+            <input type = "text" name = "concertname">
             <br> 
             <br>
-            Performer: 
+            address: 
             <br>
-            <input type = "text" name = "performer">
+            <input type = "text" name = "address">
             <br>
             <br> 
-            City:
+            groupname:
             <br>
-            <input type = "text" name = "city">
-            <br>
-            <br>
-            Showtime:
-            <br>
-            <input type = "text" name = "showtime">
+            <input type = "text" name = "groupname">
             <br>
             <br>
-            Seat:
-            <br>
-            <input type = "text" name = "seat">
-            <br>
-            <br>
-            Email Address: 
-            <br>
-            <input type = "text" name = "emailaddress">
+            time: 
+            <br> 
+            <input type = "text" name = "time">
             <br>
             <br>
-            Phone Number:
+            description:
             <br>
-            <input type = "text" name = "phonenumber">
-            <br>
-            <br>
-            Ticket Cost:
-            <br>
-            <input type = "text" name = "ticketcost">
+            <input type = "text" name = "description">
             <br>
             <br>
-            <input type = "submit" value = "Submit Concert Ticket" />
+            <input type = "submit" value = "PROCESS EVENT" />
         </form>
         </div>
     </body>

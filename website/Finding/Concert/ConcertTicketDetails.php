@@ -24,26 +24,24 @@ if (!$connection) {
     die('Connection failed' + mysql_error());
 }
   $getId=$_GET["id"];
-  $sql = 'SELECT * FROM Concert where concert_id='.$getId; 
+  $sql = 'SELECT * FROM Concert where concertid='.$getId; 
    foreach($connection->query($sql) as $row){
-    $venue = $row['venue'];
-    $performer = $row['performer'];
-    $city = $row['city'];
-    $showtime = $row['showtime'];
-    $seat = $row['seat'];
+    $concertname = $row['concertname'];
+    $address = $row['address'];
+    $groupname = $row['groupname'];
+    $description = $row['description'];
     //$date = $row['date']."\n";
     echo '<div class = "ticket">';
-    echo $venue . '<br>';
-    echo $performer . '<br>';
-    echo $city . '<br>';
-    echo $showtime . '<br>';
-    echo $seat . '<br>';
+    echo $concertname . '<br>';
+    echo $address . '<br>';
+    echo $groupname . '<br>';
+    echo $description . '<br>';
     echo '</div>';  
 }   
       
 ?>  
 
 <div class = "ticket">
-<input type = "button" value = "Take this ticket" onclick = "window.location.href = '';"/>
+<input type = "button" value = "Take this ticket" onclick = "window.location.href = '/website/TicketCenterHome.php';"/>
    </body>
 </html>

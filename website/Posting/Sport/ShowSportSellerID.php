@@ -26,11 +26,11 @@ if (!$connection) {
 $sql = 'SELECT sport, hometeam, awayteam, sport_id FROM Sport where sport_id = (select max(sport_id) from Sport)';
 $result = $connection->query($sql);
 $data = $result->fetchAll();
-$sport = $data[0]['sport'];
-$hometeam = $data[0]['hometeam'];
-$awayteam = $data[0]['awayteam'];
+$address = $data[0]['address'];
+$time = $data[0]['time'];
+$description = $data[0]['description'];
 $sport_id = $data[0]['sport_id'];
-echo "$sport, $hometeam, $awayteam, $sport_id";
+echo "$address, $time, $description, $sport_id";
 ?> <p>
 <input type = "button" value = "Completed" onclick = "window.location.href = '/website/TicketCenterHome.php';"/></p>
 

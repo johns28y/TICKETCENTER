@@ -25,32 +25,22 @@ if (!$connection) {
     die('Connection failed' + mysql_error());
 } 
   $getId=$_GET["id"];
-  $sql = 'SELECT * FROM Sport where sport_id='.$getId; 
+  $sql = 'SELECT * FROM Sport where sportid='.$getId; 
 foreach($connection->query($sql) as $row){
-    $starathlete1 = $row['starathlete1'];
-    $starathlete2 = $row['starathlete2'];
-    $stadium = $row['stadium'];
-    $city = $row['city'];
-    $gametime = $row['gametime'];
-    $seat = $row['seat'];
-    $awayteam = $row['awayteam'];
-    $hometeam = $row['hometeam'];
+    $eventname = $row['eventname'];
+    $address = $row['address'];
+    $description = $row['description'];
     //$date = $row['date']."\n";
     echo '<div class = "ticket">';
-    echo $awayteam . '<br>';
-    echo $hometeam . '<br>';
-    echo $starathlete1 . '<br>';
-    echo $starathlete2 . '<br>';
-    echo $stadium . '<br>';
-    echo $city . '<br>';
-    echo $gametime . '<br>';
-    echo $seat . '<br>';
+    echo $eventname . '<br>';
+    echo $address . '<br>';
+    echo $description . '<br>';
     echo '</div>';
 }
 ?>
 <div class = "ticket">
 <br>
-<input type = "button" value = "Take this ticket" onclick = "window.location.href = '/website/Finding/Concert/SquareCash/SquareEmailPhone.php';"/>
+<input type = "button" value = "Take this ticket" onclick = "window.location.href = '/website/TicketCenterHome.php';"/>
    </body>
 </html>
 

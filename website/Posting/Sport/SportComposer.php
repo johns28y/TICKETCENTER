@@ -9,73 +9,32 @@
     <body> 
         <div class='ticket-list'>
             <h1> 
-              Post Sport Ticket<br>
+              CREATE EVENT<br>
             </h1>
             <form action = "/posting/sport/NewSportPosts.php"> 
             <input type = "button" value = "HOME" onclick = "window.location.href = '/website/TicketCenterHome.php';"/>
             </form>
             <form action = "NewSportPosts.php" method = "post">
-                SPORT: <br> 
-                <input type="text" name="sport">
+                eventname: <br> 
+                <input type="text" name="eventname">
                 <br>
                 <br>
-                HOMETEAM:
+                address:
                 <br> 
-                <input type = "text" name = "hometeam"> 
+                <input type = "text" name = "address"> 
                 <br>
                 <br>
-                AWAYTEAM: 
+                description: 
                 <br> 
-                <input type = "text" name = "awayteam">
-                <br>
-                <br> 
-                STARATHLETE1: 
-                <br>
-                <input type = "text" name = "starathlete1"> 
+                <input type = "text" name = "description">
                 <br>
                 <br> 
-                STARATHLETE2: 
+                time: 
+                <br>
+                <input type = "text" name = "time"> 
+                <br>
                 <br> 
-                <input type = "text" name = "starathlete2">
-                <br>
-                <br>
-                STADIUM: 
-                <br>
-                <input type = "text" name = "stadium"> 
-                <br> 
-                <br> 
-                CITY: 
-                <br> 
-                <input type = "text" name = "city"> 
-                <br>
-                <br>
-                GAMETIME: 
-                <br> 
-                <input type = "text" name = "gametime"> 
-                <br> 
-                <br> 
-                SEAT: 
-                <br>  
-                <input type = "text" name = "seat"> 
-                <br> 
-                <br>
-                <br>
-                Email Address:
-                <br>
-                <input type = "text" name = "emailaddress">
-                <br>
-                <br>
-                Phone Number:
-                <br>
-                <input type = "text" name = "phonenumber">
-                <br>
-                <br>
-                Ticket Cost: 
-                <br>
-                <input type = "text" name = "ticketcost">
-                <br>
-                <br>
-                <input type="submit" value = "SUBMIT SPORT TICKET" >
+                <input type="submit" value = "PROCESS EVENT" >
             </form>
         </div>  
     </body> 
