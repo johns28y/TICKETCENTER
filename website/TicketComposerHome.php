@@ -18,8 +18,8 @@
         <form action = " "> 
         <br>
          <div class = "ticket">
-         <input type = "button" value = "CONCERT" onclick = "window.location.href = '/website/posting/concert/concertcomposer.php';"/>
-         <input type = "button" value = "SPORT" onclick = "window.location.href = '/website/posting/Sport/SportComposer.php';"/>
+         <input type = "button" value = "CONCERT" onclick = "window.location.href = '/website/Posting/concert/concertcomposer.php';"/>
+         <input type = "button" value = "SPORT" onclick = "window.location.href = '/website/Posting/Sport/SportComposer.php';"/>
         </form>
     </body>
 </html>

@@ -17,5 +17,5 @@
    </body>
 </html>
     <div class = "ticket">
-     <input type = "button" value = "FIND"  onclick = "window.location.href ='/website/finding/TicketIndexHome.php';"/>
+     <input type = "button" value = "FIND"  onclick = "window.location.href ='/website/Finding/TicketIndexHome.php';"/>
        <input type = "button" value = "POST" onclick = "window.location.href = '/website/TicketComposerHome.php';"/>  
